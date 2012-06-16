@@ -43,6 +43,7 @@ vendor/motorola/spyder/proprietary/bin/mot_boot_mode:/system/bin/mot_boot_mode \
 vendor/motorola/spyder/proprietary/bin/motobox:/system/bin/motobox \
 vendor/motorola/spyder/proprietary/bin/mount_cdrom.sh:/system/bin/mount_cdrom.sh \
 vendor/motorola/spyder/proprietary/bin/msp430:/system/bin/msp430 \
+vendor/motorola/spyder/proprietary/bin/pppd-ril:/system/bin/pppd-ril \
 vendor/motorola/spyder/proprietary/bin/secclkd:/system/bin/secclkd \
 vendor/motorola/spyder/proprietary/bin/startup_smc.sh:/system/bin/startup_smc.sh \
 vendor/motorola/spyder/proprietary/bin/tcmd:/system/bin/tcmd \
@@ -99,6 +100,7 @@ vendor/motorola/spyder/proprietary/etc/motorola/12m/key_code_map.txt:system/etc/
 vendor/motorola/spyder/proprietary/etc/security/suplcerts.bks:system/etc/security/suplcerts.bks \
 vendor/motorola/spyder/proprietary/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml:system/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml \
 vendor/motorola/spyder/proprietary/etc/permissions/com.verizon.hardware.telephony.lte.xml:system/etc/permissions/com.verizon.hardware.telephony.lte.xml \
+vendor/motorola/spyder/proprietary/etc/powervr.ini:/system/etc/powervr.ini
 
 #vendor/motorola/spyder/proprietary/etc/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
 #vendor/motorola/spyder/proprietary/etc/wifi/hostapd.conf:/system/etc/wifi/hostapd.conf \
@@ -124,11 +126,8 @@ vendor/motorola/spyder/proprietary/usr/share/alsa/pcm/surround41.conf:system/usr
 vendor/motorola/spyder/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
 vendor/motorola/spyder/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
 vendor/motorola/spyder/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf
+vendor/motorola/spyder/proprietary/lib/libdevicestats.so:/system/lib/libdevicestats.so \
 
-#vendor/motorola/spyder/proprietary/lib/libdataencrypt.so:/system/lib/libdataencrypt.so \
-#vendor/motorola/spyder/proprietary/lib/libdataencrypt_tpa.so:/system/lib/libdataencrypt_tpa.so \
-#vendor/motorola/spyder/proprietary/lib/libdataencrypt_utils.so:/system/lib/libdataencrypt_utils.so \
-#vendor/motorola/spyder/proprietary/lib/libdevicestats.so:/system/lib/libdevicestats.so \
 # system/lib
 PRODUCT_COPY_FILES += \
 vendor/motorola/spyder/proprietary/lib/libadkutils.so:/system/lib/libadkutils.so \
@@ -138,6 +137,9 @@ vendor/motorola/spyder/proprietary/lib/libbcbmsg.so:/system/lib/libbcbmsg.so \
 vendor/motorola/spyder/proprietary/lib/libbt-aptx-4.0.3.so:/system/lib/libbt-aptx-4.0.3.so \
 vendor/motorola/spyder/proprietary/lib/libcaps.so:/system/lib/libcaps.so \
 vendor/motorola/spyder/proprietary/lib/libcapsjava.so:/system/lib/libcapsjava.so \
+vendor/motorola/spyder/proprietary/lib/libdataencrypt.so:/system/lib/libdataencrypt.so \
+vendor/motorola/spyder/proprietary/lib/libdataencrypt_tpa.so:/system/lib/libdataencrypt_tpa.so \
+vendor/motorola/spyder/proprietary/lib/libdataencrypt_utils.so:/system/lib/libdataencrypt_utils.so \
 vendor/motorola/spyder/proprietary/lib/libdlnahttpjni.so:/system/lib/libdlnahttpjni.so \
 vendor/motorola/spyder/proprietary/lib/libdlnajni.so:/system/lib/libdlnajni.so \
 vendor/motorola/spyder/proprietary/lib/libdlnaprofileparser.so:/system/lib/libdlnaprofileparser.so \
@@ -161,6 +163,7 @@ vendor/motorola/spyder/proprietary/lib/libmotodbgutils.so:/system/lib/libmotodbg
 vendor/motorola/spyder/proprietary/lib/libmoto_mdmctrl.so:/system/lib/libmoto_mdmctrl.so \
 vendor/motorola/spyder/proprietary/lib/libmoto_netutil.so:/system/lib/libmoto_netutil.so \
 vendor/motorola/spyder/proprietary/lib/libmss.so:/system/lib/libmss.so \
+vendor/motorola/spyder/proprietary/lib/libmss.so.sig:/system/lib/libmss.so.sig \
 vendor/motorola/spyder/proprietary/lib/libnativedrm1.so:/system/lib/libnativedrm1.so \
 vendor/motorola/spyder/proprietary/lib/libnbgm.so:/system/lib/libnbgm.so \
 vendor/motorola/spyder/proprietary/lib/libnmea.so:/system/lib/libnmea.so \
@@ -192,8 +195,7 @@ vendor/motorola/spyder/proprietary/lib/libXmp_jni.so:/system/lib/libXmp_jni.so \
 vendor/motorola/spyder/proprietary/lib/libxmpcore.so:/system/lib/libxmpcore.so \
 vendor/motorola/spyder/proprietary/lib/libWifiAPHardware.so:/system/lib/libWifiAPHardware.so \
 vendor/motorola/spyder/proprietary/lib/libOMX.ITTIAM.AAC.encode.so:/system/lib/libOMX.ITTIAM.AAC.encode.so \
-
-#vendor/motorola/spyder/proprietary/lib/libportaljni.so:/system/lib/libportaljni.so \
+vendor/motorola/spyder/proprietary/lib/libportaljni.so:/system/lib/libportaljni.so \
 
 # RIL files
 PRODUCT_COPY_FILES += \
@@ -214,8 +216,8 @@ vendor/motorola/spyder/proprietary/lib/libmoto_qmi_ril.so:/system/lib/libmoto_qm
 vendor/motorola/spyder/proprietary/lib/libmoto_ril.so:/system/lib/libmoto_ril.so \
 vendor/motorola/spyder/proprietary/lib/libmotdb.so:/system/lib/libmotdb.so \
 vendor/motorola/spyder/proprietary/lib/moto-ril-multimode.so:/system/lib/moto-ril-multimode.so \
+vendor/motorola/spyder/proprietary/lib/libims_client_jni.so:/system/lib/libims_client_jni.so \
 
-#vendor/motorola/spyder/proprietary/lib/libims_client_jni.so:/system/lib/libims_client_jni.so \
 # system/lib/hw
 PRODUCT_COPY_FILES += \
 vendor/motorola/spyder/proprietary/lib/hw/gps.spyder.so:/system/lib/hw/gps.spyder.so \
@@ -251,6 +253,12 @@ vendor/motorola/spyder/proprietary/vendor/lib/libwvm.so:/system/vendor/lib/libwv
 vendor/motorola/spyder/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:/system/vendor/lib/libWVStreamControlAPI_L3.so \
 
 # Camera libs we need for now
-#PRODUCT_COPY_FILES += \
-#vendor/motorola/spyder/proprietary/lib/libpostcapimgproc_intf.so:/system/lib/libpostcapimgproc_intf.so \
-#vendor/motorola/spyder/proprietary/lib/hw/camera.omap4.so:/system/lib/hw/camera.omap4.so \
+PRODUCT_COPY_FILES += \
+vendor/motorola/spyder/proprietary/lib/libpostcapimgproc_intf.so:/system/lib/libpostcapimgproc_intf.so \
+vendor/motorola/spyder/proprietary/lib/hw/camera.omap4.so:/system/lib/hw/camera.omap4.so \
+
+# Load TCMD libs
+PRODUCT_COPY_FILES += \
+vendor/motorola/spyder/proprietary/lib/libaudiotcmd.so:/system/lib/libaudiotcmd.so \
+vendor/motorola/spyder/proprietary/lib/libtcmdcameraservice.so:/system/lib/libtcmdcameraservice.so \
+
