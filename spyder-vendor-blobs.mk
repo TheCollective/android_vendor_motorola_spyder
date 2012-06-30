@@ -254,8 +254,8 @@ vendor/motorola/spyder/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:/syste
 
 # Camera libs we need for now
 PRODUCT_COPY_FILES += \
-vendor/motorola/spyder/proprietary/lib/libpostcapimgproc_intf.so:/system/lib/libpostcapimgproc_intf.so \
-vendor/motorola/spyder/proprietary/lib/hw/camera.omap4.so:/system/lib/hw/camera.omap4.so \
+#vendor/motorola/spyder/proprietary/lib/libpostcapimgproc_intf.so:/system/lib/libpostcapimgproc_intf.so \
+#vendor/motorola/spyder/proprietary/lib/hw/camera.omap4.so:/system/lib/hw/camera.omap4.so \
 
 # Load TCMD libs
 PRODUCT_COPY_FILES += \
