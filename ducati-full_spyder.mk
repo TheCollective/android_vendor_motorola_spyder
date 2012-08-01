@@ -17,7 +17,6 @@
 # Unpack and install TI Ducati firmware and DCC files for the Spyder
 
 PRODUCT_COPY_FILES += \
-	vendor/motorola/spyder/ducati_full_blaze/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
 	vendor/motorola/spyder/ducati_full_blaze/camera/R8_MVEN002_LD2_ND0_IR0_SH0_FL1_SVEN003_DCCID1042/cid1042_ov5640_vnf_cfg_dcc.bin:system/etc/omapcam/R8_MVEN002_LD2_ND0_IR0_SH0_FL1_SVEN003_DCCID1042/cid1042_ov5640_vnf_cfg_dcc.bin \
 	vendor/motorola/spyder/ducati_full_blaze/camera/R8_MVEN002_LD2_ND0_IR0_SH0_FL1_SVEN003_DCCID1042/cid1042_ov5640_ducati_nsf_ldc.bin:system/etc/omapcam/R8_MVEN002_LD2_ND0_IR0_SH0_FL1_SVEN003_DCCID1042/cid1042_ov5640_ducati_nsf_ldc.bin \
 	vendor/motorola/spyder/ducati_full_blaze/camera/R8_MVEN002_LD2_ND0_IR0_SH0_FL1_SVEN003_DCCID1042/cid1042_ov5640_capabilities.bin:system/etc/omapcam/R8_MVEN002_LD2_ND0_IR0_SH0_FL1_SVEN003_DCCID1042/cid1042_ov5640_capabilities.bin \
