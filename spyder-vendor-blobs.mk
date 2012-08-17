@@ -210,15 +210,13 @@ vendor/motorola/spyder/proprietary/lib/hw/sensorhub.spyder.so:/system/lib/hw/sen
 # system/xbin
 PRODUCT_COPY_FILES += \
 vendor/motorola/spyder/proprietary/xbin/drm1_func_test:/system/xbin/drm1_func_test \
-vendor/motorola/spyder/proprietary/xbin/dexdump:/system/xbin/dexdump \
-vendor/motorola/spyder/proprietary/xbin/nc:/system/xbin/nc \
 
 # Load TCMD libs
 PRODUCT_COPY_FILES += \
-vendor/motorola/solana/proprietary/lib/libaudiotcmd.so:/system/lib/libaudiotcmd.so \
-vendor/motorola/solana/proprietary/lib/libfm_stack.so:/system/lib/libfm_stack.so \
-vendor/motorola/solana/proprietary/lib/libfmchr.so:/system/lib/libfmchr.so \
-vendor/motorola/solana/proprietary/lib/libmcphal.so:/system/lib/libmcphal.so \
-vendor/motorola/solana/proprietary/lib/libtcmdcameraservice.so:/system/lib/libtcmdcameraservice.so \
+vendor/motorola/spyder/proprietary/lib/libaudiotcmd.so:/system/lib/libaudiotcmd.so \
+vendor/motorola/spyder/proprietary/lib/libfm_stack.so:/system/lib/libfm_stack.so \
+vendor/motorola/spyder/proprietary/lib/libfmchr.so:/system/lib/libfmchr.so \
+vendor/motorola/spyder/proprietary/lib/libmcphal.so:/system/lib/libmcphal.so \
+vendor/motorola/spyder/proprietary/lib/libtcmdcameraservice.so:/system/lib/libtcmdcameraservice.so \
 
 
