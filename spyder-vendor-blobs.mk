@@ -87,7 +87,7 @@ vendor/motorola/spyder/proprietary/etc/motorola/12m/key_code_map.txt:system/etc/
 vendor/motorola/spyder/proprietary/etc/security/suplcerts.bks:system/etc/security/suplcerts.bks \
 vendor/motorola/spyder/proprietary/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml:system/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml \
 vendor/motorola/spyder/proprietary/etc/permissions/com.verizon.hardware.telephony.lte.xml:system/etc/permissions/com.verizon.hardware.telephony.lte.xml \
-vendor/motorola/spyder/proprietary/etc/powervr.ini:/system/etc/powervr.ini \
+#vendor/motorola/spyder/proprietary/etc/powervr.ini:/system/etc/powervr.ini \
 
 # system/usr
 PRODUCT_COPY_FILES += \
@@ -109,23 +109,29 @@ vendor/motorola/spyder/proprietary/usr/share/alsa/pcm/surround40.conf:system/usr
 vendor/motorola/spyder/proprietary/usr/share/alsa/pcm/surround41.conf:system/usr/share/alsa/pcm/surround41.conf \
 vendor/motorola/spyder/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
 vendor/motorola/spyder/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
-vendor/motorola/spyder/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
-vendor/motorola/spyder/proprietary/usr/idc/evfwd.idc:system/usr/idc/evfwd.idc \
+vendor/motorola/spyder/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf
+
+# webtop files
+#PRODUCT_COPY_FILES += \
+#vendor/motorola/spyder/proprietary/usr/idc/evfwd.idc:system/usr/idc/evfwd.idc \
+#vendor/motorola/spyder/proprietary/usr/keylayout/evfwd.kl:system/usr/keylayout/evfwd.kl \
+#vendor/motorola/spyder/proprietary/usr/keychars/evfwd.kcm:system/usr/keychars/evfwd.kcm \
+
+# system/usr/*
+PRODUCT_COPY_FILES += \
 vendor/motorola/spyder/proprietary/usr/idc/Motorola_Mobility_Motorola_HD_Dock.idc:system/usr/idc/Motorola_Mobility_Motorola_HD_Dock.idc \
 vendor/motorola/spyder/proprietary/usr/idc/qwerty.idc:system/usr/idc/qwerty.idc \
 vendor/motorola/spyder/proprietary/usr/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
-vendor/motorola/spyder/proprietary/usr/keychars/evfwd.kcm:system/usr/keychars/evfwd.kcm \
 vendor/motorola/spyder/proprietary/usr/keychars/omap4-keypad.kcm:system/usr/keychars/omap4-keypad.kcm \
 vendor/motorola/spyder/proprietary/usr/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
 vendor/motorola/spyder/proprietary/usr/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
 vendor/motorola/spyder/proprietary/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
 vendor/motorola/spyder/proprietary/usr/keylayout/cpcap-key.kl:system/usr/keylayout/cpcap-key.kl \
 vendor/motorola/spyder/proprietary/usr/keylayout/cy8c201xx.kl:system/usr/keylayout/cy8c201xx.kl \
-vendor/motorola/spyder/proprietary/usr/keylayout/evfwd.kl:system/usr/keylayout/evfwd.kl \
 vendor/motorola/spyder/proprietary/usr/keylayout/omap4-keypad.kl:system/usr/keylayout/omap4-keypad.kl \
 vendor/motorola/spyder/proprietary/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
-vendor/motorola/spyder/proprietary/lib/libdevicestats.so:/system/lib/libdevicestats.so \
 
+#vendor/motorola/spyder/proprietary/lib/libdevicestats.so:/system/lib/libdevicestats.so \
 # system/lib
 PRODUCT_COPY_FILES += \
 vendor/motorola/spyder/proprietary/lib/libadkutils.so:/system/lib/libadkutils.so \
@@ -238,8 +244,8 @@ vendor/motorola/spyder/proprietary/xbin/drm1_func_test:/system/xbin/drm1_func_te
 # Load TCMD libs
 PRODUCT_COPY_FILES += \
 vendor/motorola/spyder/proprietary/lib/libaudiotcmd.so:/system/lib/libaudiotcmd.so \
-vendor/motorola/solana/proprietary/lib/libfm_stack.so:/system/lib/libfm_stack.so \
-vendor/motorola/solana/proprietary/lib/libfmchr.so:/system/lib/libfmchr.so \
-vendor/motorola/solana/proprietary/lib/libmcphal.so:/system/lib/libmcphal.so \
+vendor/motorola/spyder/proprietary/lib/libfm_stack.so:/system/lib/libfm_stack.so \
+vendor/motorola/spyder/proprietary/lib/libfmchr.so:/system/lib/libfmchr.so \
+vendor/motorola/spyder/proprietary/lib/libmcphal.so:/system/lib/libmcphal.so \
 vendor/motorola/spyder/proprietary/lib/libtcmdcameraservice.so:/system/lib/libtcmdcameraservice.so \
 
