@@ -18,3 +18,7 @@
 $(call inherit-product, vendor/motorola/spyder/spyder-vendor-blobs.mk)
 
 $(call inherit-product, vendor/motorola/common/common-vendor.mk)
+
+# MotoSimUI
+PRODUCT_PACKAGES += MotoSimUiHelper
+
